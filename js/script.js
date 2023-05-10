@@ -134,15 +134,15 @@ function upDateEquip() {
 
 
 function upDateTraffic() {
-  if (trafficCount < (equipCount * 400)) { // green
+  if (trafficCount < (equipCount * 400)) {
     trafficRisk.innerHTML = `Ok<br>Кол-во пользоваталей:<br>${trafficCount}/${equipCount * 500}`
     addGreen(trafficRisk)
   }
-  if ((trafficCount >= (equipCount * 400)) && (trafficCount < (equipCount * 480))) { // yellow
+  if ((trafficCount >= (equipCount * 400)) && (trafficCount < (equipCount * 480))) {
     trafficRisk.innerHTML = `Warning<br>Кол-во пользоваталей:<br>${trafficCount}/${equipCount * 500}`
     addYellow(trafficRisk)
   }
-  if (trafficCount >= (equipCount * 480)) { // red
+  if (trafficCount >= (equipCount * 480)) {
     trafficRisk.innerHTML = `Critical<br>Кол-во пользоваталей:<br>${trafficCount}/${equipCount * 500}`
     addRed(trafficRisk)
   }
